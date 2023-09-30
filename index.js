@@ -9,11 +9,10 @@ const port = 7000;
 app.use(express.json())
 app.use(cors());
 
-//Available routes
 app.use("/api/auth", require('./routes/auth'))
 app.use("/api/lawyerauth", require('./routes/lawyerauth'))
-// app.use("/api/Booking", require('./routes/lawyerbooking'))
 app.use("/api/search", require('./routes/lawyer'))
+// app.use("/api/Booking", require('./routes/lawyerbooking'))
 
 // app.use("/api/", require('./routes/notes'))
 
